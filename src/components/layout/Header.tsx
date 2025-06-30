@@ -3,14 +3,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { HomeNavButton, MyPostNavButton } from "@/data/appTexts";
 import NavButton from "./NavButton";
+import { Route } from "@/data/appConstants";
 
 export default function Header() {
   const [activeButton, setActiveButton] = useState<string | null>(null);
-
-  enum Route {
-    Home = "home",
-    Posts = "posts",
-  }
 
   return (
     <div className="flex justify-between items-center h-16 text-lg sm:text-xl fixed top-0 left-0 w-full z-1 bg-white shadow">
