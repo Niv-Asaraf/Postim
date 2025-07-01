@@ -1,7 +1,11 @@
+import Search from "@/components/homePage/Search";
+
 export default function Home() {
   return (
     <>
-      <div className="p-10 h-100">Home page content</div>
+      <div>
+        <Search />
+      </div>
     </>
   );
 }
