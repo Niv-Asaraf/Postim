@@ -20,4 +20,5 @@ export const PUBLISHED_ON = "Published on";
 //  --- PostSammary.tsx  ---
 export const READ_MORE_BUTTON = "Read More";
 
-
+//  --- app/page.tsx  ---
+export const NEWEST_POSTS_HEADER = "Newest Posts";

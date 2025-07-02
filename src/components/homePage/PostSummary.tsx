@@ -1,3 +1,4 @@
+"use client";
 import { SummaryPost } from "@/types/post";
 import PostStamp from "../post/PostStamp";
 import Button from "./Button";
@@ -32,6 +33,9 @@ export default function PostSummary({ post }: PostSummaryProps) {
               type={ButtonTypes.TRANSPARENT}
               className="rounded-sm text-xs py-2 px-3"
               label={READ_MORE_BUTTON}
+              onClick={() => {
+                // TODO: Implement this function
+              }}
             />
           </div>
         </div>
