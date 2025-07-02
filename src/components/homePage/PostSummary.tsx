@@ -20,11 +20,7 @@ export default function PostSummary({ post }: PostSummaryProps) {
       <div className="p-4 flex flex-col flex-1">
         <div className="flex-1">
           <h2 className="text-xl font-semibold">{post.title}</h2>
-          <p className="text-base text-gray-600 mt-2">
-            {post.description}
-            {post.description}
-            {post.description}
-          </p>
+          <p className="text-base text-gray-600 mt-2">{post.description}</p>
         </div>
 
         <div className="flex flex-col justify-between sm:flex-row md:flex-col xl:flex-row gap-3 pt-2 pr-1">
