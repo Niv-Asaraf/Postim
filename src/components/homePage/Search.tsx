@@ -1,11 +1,18 @@
+import {
+  HERO_IMAGE_ALT,
+  SEARCH_BUTTON_LABEL,
+  SEARCH_INPUT_PLACEHOLDER,
+} from "@/data/appTexts";
 import Image from "next/image";
+import Button from "./Button";
+import { ButtonTypes } from "@/data/appConstants";
 
 export default function Search() {
   return (
     <div className="border w-full h-[35vh] relative">
       <Image
         src="/SearchHero.png"
-        alt="Hero Image"
+        alt={HERO_IMAGE_ALT}
         className="bg-cover"
         fill
         priority
@@ -15,11 +22,13 @@ export default function Search() {
           <input
             type="text"
             className="px-3 py-1.5 rounded-md bg-white color-gray w-[80%] text-xs sm:text-sm lg:text-base lg:w-[85%]"
-            placeholder="Search blogs or posts"
+            placeholder={SEARCH_INPUT_PLACEHOLDER}
           />
-          <button className="bg-[#2463eb] text-white px-2 py-1.5 rounded-md text-xs w-14 sm:w-18 sm:text-sm lg:text-base">
-            Search
-          </button>
+          <Button
+            type={ButtonTypes.PRIMARY}
+            label={SEARCH_BUTTON_LABEL}
+            className="bg-[#2463eb] text-white px-2 py-1.5 rounded-md text-xs w-14 sm:w-18 sm:text-sm lg:text-base"
+          />
         </div>
       </div>
     </div>
