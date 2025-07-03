@@ -1,7 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { HomeNavButton, MyPostNavButton } from "@/data/appTexts";
+import {
+  HOME_NAV_BUTTON,
+  LOGO_IMAGE_ALT,
+  MY_POSTS_NAV_BUTTON,
+} from "@/data/appTexts";
 import NavButton from "./NavButton";
 import { Route } from "@/data/appConstants";
 
@@ -12,21 +16,21 @@ export default function Header() {
     <div className="flex justify-between items-center h-16 text-lg sm:text-xl fixed top-0 left-0 w-full z-1 bg-white shadow">
       <Image
         src="/PostimLogo.png"
-        alt="Logo"
+        alt={LOGO_IMAGE_ALT}
         width={120}
         height={120}
         className="pl-6"
       />
       <div className="flex gap-4 pr-9">
         <NavButton
-          label={HomeNavButton}
-          isActive={activeButton === Route.Home}
-          onClick={() => setActiveButton(Route.Home)}
+          label={HOME_NAV_BUTTON}
+          isActive={activeButton === Route.HOME}
+          onClick={() => setActiveButton(Route.HOME)}
         />
         <NavButton
-          label={MyPostNavButton}
-          isActive={activeButton === Route.Posts}
-          onClick={() => setActiveButton(Route.Posts)}
+          label={MY_POSTS_NAV_BUTTON}
+          isActive={activeButton === Route.POSTS}
+          onClick={() => setActiveButton(Route.POSTS)}
         />
       </div>
     </div>
