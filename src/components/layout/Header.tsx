@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import {
   HOME_NAV_BUTTON,
@@ -10,8 +8,6 @@ import NavButton from "./NavButton";
 import { Route } from "@/data/appConstants";
 
 export default function Header() {
-  const [activeButton, setActiveButton] = useState<string | null>(null);
-
   return (
     <div className="flex justify-between items-center h-16 text-lg sm:text-xl fixed top-0 left-0 w-full z-1 bg-white shadow">
       <Image
@@ -22,16 +18,8 @@ export default function Header() {
         className="pl-6"
       />
       <div className="flex gap-4 pr-9">
-        <NavButton
-          label={HOME_NAV_BUTTON}
-          isActive={activeButton === Route.HOME}
-          onClick={() => setActiveButton(Route.HOME)}
-        />
-        <NavButton
-          label={MY_POSTS_NAV_BUTTON}
-          isActive={activeButton === Route.POSTS}
-          onClick={() => setActiveButton(Route.POSTS)}
-        />
+        <NavButton label={HOME_NAV_BUTTON} href={Route.HOME} />
+        <NavButton label={MY_POSTS_NAV_BUTTON} href={""} />
       </div>
     </div>
   );

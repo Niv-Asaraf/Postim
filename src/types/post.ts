@@ -6,3 +6,12 @@ export type SummaryPost = {
   author: string;
   publishedAt: string;
 };
+export type PostCategory = {
+  id: number;
+  name: string;
+};
+export type RelatedPostType = {
+  id: number;
+  title: string;
+  primaryImageUrl: string;
+};
