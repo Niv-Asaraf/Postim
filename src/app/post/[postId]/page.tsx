@@ -15,11 +15,8 @@ export default async function PostPage({ params }: PostPageProps) {
 
   if (!post) return notFound();
   return (
-    // Div - Container:
     <div className="flex flex-col lg:flex-row bg-gray-50">
-      {/* {--------- Div-Left -----------} */}
       <div className="flex flex-col gap-5 p-4 w-full lg:h-full lg:w-3/4 xl:w-4/5 pt-6 pl-8">
-        {/* {Div - Top Contentet - Left} */}
         <div className="flex flex-col gap-2 flex-wrap">
           <h1 className="text-2xl md:text-3xl">{post.title}</h1>
           <PostStamp
@@ -28,10 +25,8 @@ export default async function PostPage({ params }: PostPageProps) {
             className="text-base"
           />
         </div>
-        {/* {Div - Categories List} */}
         <PostCategories categoriesList={post.categories} />
 
-        {/* Div - Image Container */}
         <div className="h-40 mt-1 sm:h-50 md-h-65 xl:h-70">
           <img
             src={post.primaryImageUrl}
@@ -40,18 +35,14 @@ export default async function PostPage({ params }: PostPageProps) {
           />
         </div>
 
-        {/* Div - Buttom Contentet - Left */}
         <div>
           <p className="text-gray-600 mt-2 sm:text-lg">{post.body}</p>
         </div>
       </div>
 
-      {/* -----------  Div-Right ------------------ */}
       <div className="flex flex-col items-center w-full lg:h-full lg:w-1/4 xl:w-1/5">
-        {/* Div - White BG*/}
         <div className="flex flex-col gap-5 bg-white w-5/6 h-80 my-10 shadow-lg py-4 px-3 rounded-md lg:mr-6 lg:h-150">
           <h1 className="text-lg h-1/12">{RELEATED_POST_HEADER}</h1>
-          {/* Related Posts List */}
           <RelatedPostsList relatedList={post.relatedPosts} />
         </div>
       </div>
