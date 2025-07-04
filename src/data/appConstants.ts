@@ -1,7 +1,7 @@
 //  --- Header.tsx  ---
 export enum Route {
-  HOME = "home",
-  POSTS = "posts",
+  HOME = "/",
+  POSTS = "/myPosts",
 }
 export enum ButtonTypes {
   PRIMARY = "primary",
