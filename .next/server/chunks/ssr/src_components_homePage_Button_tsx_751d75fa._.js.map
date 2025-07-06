@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/nivas/Desktop/Skills/Skills-Projects-New/postim/src/components/homePage/Button.tsx"],"sourcesContent":["\"use client\";\nimport { ButtonTypes } from \"@/data/appConstants\";\n\ninterface ButtonProps {\n  type?: ButtonTypes.PRIMARY | ButtonTypes.TRANSPARENT;\n  label: string;\n  className?: string;\n  onClick?: () => void;\n}\nconst typeClasses = {\n  primary: \"bg-[#2463eb] text-white\",\n  transparent:\n    \"bg-transparent text-black hover:bg-[#2463eb] hover:text-white transition-colors duration-300 ease-in-out\",\n};\nexport default function Button({\n  type = ButtonTypes.PRIMARY,\n  label,\n  onClick,\n  className = \"\",\n}: ButtonProps) {\n  return (\n    <button onClick={onClick} className={`${typeClasses[type]} ${className}`}>\n      {label}\n    </button>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AADA;;;AASA,MAAM,cAAc;IAClB,SAAS;IACT,aACE;AACJ;AACe,SAAS,OAAO,EAC7B,OAAO,2HAAA,CAAA,cAAW,CAAC,OAAO,EAC1B,KAAK,EACL,OAAO,EACP,YAAY,EAAE,EACF;IACZ,qBACE,8OAAC;QAAO,SAAS;QAAS,WAAW,GAAG,WAAW,CAAC,KAAK,CAAC,CAAC,EAAE,WAAW;kBACrE;;;;;;AAGP","debugId":null}}]
+}

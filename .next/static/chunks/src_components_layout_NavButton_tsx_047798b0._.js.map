@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/nivas/Desktop/Skills/Skills-Projects-New/postim/src/components/layout/NavButton.tsx"],"sourcesContent":["\"use client\";\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\n\ninterface NavButtonProps {\n  label: string;\n  href: string;\n  onClick?: () => void;\n}\n\nexport default function NavButton({ label, href, onClick }: NavButtonProps) {\n  const pathname = usePathname();\n  const isActive = pathname === href;\n  return (\n    <Link href={href}>\n      <button\n        onClick={onClick}\n        className={`cursor-pointer transition-colors\n        ${isActive ? \"text-[#2463eb]\" : \"text-black\"}\n      `}\n      >\n        {label}\n      </button>\n    </Link>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AACA;;;AAFA;;;AAUe,SAAS,UAAU,EAAE,KAAK,EAAE,IAAI,EAAE,OAAO,EAAkB;;IACxE,MAAM,WAAW,CAAA,GAAA,qIAAA,CAAA,cAAW,AAAD;IAC3B,MAAM,WAAW,aAAa;IAC9B,qBACE,6LAAC,+JAAA,CAAA,UAAI;QAAC,MAAM;kBACV,cAAA,6LAAC;YACC,SAAS;YACT,WAAW,CAAC;QACZ,EAAE,WAAW,mBAAmB,aAAa;MAC/C,CAAC;sBAEE;;;;;;;;;;;AAIT;GAfwB;;QACL,qIAAA,CAAA,cAAW;;;KADN","debugId":null}}]
+}
