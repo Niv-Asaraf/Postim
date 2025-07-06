@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# dotenv environment files
+.env
+.env.*.local
+
+# Next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# misc
+.DS_Store
+.idea/
+.vscode/
+*.tsbuildinfo
+
+# test coverage
+coverage/
+
+# debug log files
+npm-debug.log*
