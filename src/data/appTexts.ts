@@ -22,3 +22,6 @@ export const READ_MORE_BUTTON = "Read More";
 
 //  --- app/page.tsx  ---
 export const NEWEST_POSTS_HEADER = "Newest Posts";
+
+//  --- app/post/page.tsx --- 
+export const RELEATED_POST_HEADER = "Related Posts";
