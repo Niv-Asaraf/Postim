@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///Users/nivas/Desktop/Skills/Skills-Projects-New/postim/src/components/layout/Header.tsx"],"sourcesContent":["\"use client\";\nimport { useState } from \"react\";\nimport Image from \"next/image\";\n\nexport default function Header() {\n  return (\n    <div className=\"flex justify-between items-center h-16\">\n      <Image\n        src=\"/PostimLogo.png\"\n        alt=\"Logo\"\n        width={100}\n        height={70}\n        className=\"pl-6\"\n      />\n      <div className=\"flex gap-4 pr-9\">\n        <button>Home</button>\n        <button>My Posts </button>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;;0BACb,6LAAC,gIAAA,CAAA,UAAK;gBACJ,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;gBACR,WAAU;;;;;;0BAEZ,6LAAC;gBAAI,WAAU;;kCACb,6LAAC;kCAAO;;;;;;kCACR,6LAAC;kCAAO;;;;;;;;;;;;;;;;;;AAIhB;KAhBwB","debugId":null}}]
+}
